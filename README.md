@@ -1,2 +1,2 @@
 # Algorithms
-Repo for algorithms practice
+Repo for algorithms and data structures practice 
