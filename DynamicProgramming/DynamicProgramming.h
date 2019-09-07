@@ -1,6 +1,7 @@
 #ifndef CLION_DYNAMICPROGRAMMING_H
 #define CLION_DYNAMICPROGRAMMING_H
 
+#include <string>
 #include <vector>
 
 /*
@@ -36,6 +37,9 @@ int cherryPickupI(std::vector<std::vector<int>>& grid);
 
 // 174. Dungeon Game (incorrect solution)
 int calculateMinimumHP(std::vector<std::vector<int>>& dungeon);
+
+// 32. Longest Valid Parenthesis
+int longestValidParentheses(const std::string& s);
 
 
 #endif //CLION_DYNAMICPROGRAMMING_H
