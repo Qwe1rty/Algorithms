@@ -3,6 +3,15 @@
 
 #include <vector>
 
+class ListNode;
+
+/*
+ * Easy
+ */
+
+// 21. Merge Two Sorted Lists
+ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
+
 /*
  * Hard
  */
