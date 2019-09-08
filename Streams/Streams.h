@@ -10,7 +10,14 @@ class ListNode;
  */
 
 // 21. Merge Two Sorted Lists
-ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
+ListNode* mergeTwoLists(ListNode* l1, ListNode* l2);
+
+/*
+ * Medium
+ */
+
+// 19. Remove Nth Node From End of List
+ListNode* removeNthFromEnd(ListNode* head, int n);
 
 /*
  * Hard
