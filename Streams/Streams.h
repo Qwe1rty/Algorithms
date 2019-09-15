@@ -26,5 +26,8 @@ ListNode* removeNthFromEnd(ListNode* head, int n);
 // 239. Sliding Window Maximum
 std::vector<int> maxSlidingWindow(const std::vector<int>& nums, int k);
 
+// 128. Longest Consecutive Sequence
+int longestConsecutive(const std::vector<int>& nums);
+
 
 #endif //CLION_STREAMS_H
