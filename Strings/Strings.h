@@ -13,4 +13,8 @@ bool isAnagram(const std::string& src, const std::string& dst);
 // 3. Longest Substring Without Repeating Characters
 int lengthOfLongestSubstring(const std::string& s);
 
+// 5. Longest Palindromic Substring
+std::string longestPalindrome(const std::string& s);
+
+
 #endif //CLION_STRINGS_H

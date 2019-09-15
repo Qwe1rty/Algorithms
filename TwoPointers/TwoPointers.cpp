@@ -108,11 +108,7 @@ std::vector<std::vector<int>> fourSum(std::vector<int>& nums, int target) {
     return std::move(resultVector);
 }
 
-
 /*
- * 18. 4Sum
- * Medium
- *
  * 2Sum + 2Sum = 4Sum strategy solution
  * speed: 348ms, faster than 6.58%
  * memory: 86.7MB, less than 5.21%

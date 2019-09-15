@@ -309,11 +309,7 @@ int cherryPickupI(std::vector<std::vector<int>>& grid) {
     return dp[0][0];
 }
 
-
 /*
- * 741. Cherry Pickup
- * Hard
- *
  * Diagonal slicing DP strategy
  * speed: 40ms, faster than 84.56%
  * memory: 18.9MB, less than 44.74%
@@ -464,7 +460,7 @@ int calculateMinimumHP(std::vector<std::vector<int>>& dungeon) {
  * 32. Longest Valid Parentheses
  * Hard
  *
- *
+ * O(n) bottom-up solution
  * speed: 4ms, faster than 96.01%
  * memory: 9.4MB, less than 85.71%
  *
