@@ -12,6 +12,9 @@ class ListNode;
 // 21. Merge Two Sorted Lists
 ListNode* mergeTwoLists(ListNode* l1, ListNode* l2);
 
+// 53. Maximum Subarray
+int maxSubArray(const std::vector<int>& nums);
+
 /*
  * Medium
  */
