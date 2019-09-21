@@ -38,13 +38,54 @@ ListNode* mergeKLists(std::vector<ListNode*>& lists) {
  * 215. Kth Largest Element in an Array
  * Medium
  *
+ * O(n) divide and conquer solution
+ * speed: 8ms, faster than 97.54%
+ * memory: 9.2 MB, less than 93.94%
+ *
+ * https://leetcode.com/problems/kth-largest-element-in-an-array/
+ */
+int findKthLargest(std::vector<int>& nums, int k) {
+
+  int l = 0;
+  int r = nums.size();
+  const int kr = r - k;
+
+  while (r - l > 1) {
+
+    std::swap(nums[l], nums[(l + r) / 2]);
+    int li = l + 1;
+    int ri = l + 1;
+
+    // LL traversal partitioning logic, pivot located at (li - 1) afterwards
+    while (ri < r) {
+      if (nums[ri] < nums[l]) {
+        std::swap(nums[li], nums[ri]);
+        ++li;
+      }
+      ++ri;
+    }
+    std::swap(nums[l], nums[li - 1]);
+
+    if (li - 1 < kr) {
+      l = li;
+    }
+    else if (li - 1 > kr) {
+      r = li - 1;
+    }
+    else break;
+  }
+
+  return nums[kr];
+}
+
+/*
  * O(n + k*log(k)) heapify + BFS solution
  * speed: 16 ms, faster than 45.40%
  * memory: 9.4 MB, less than 60.61%
  *
  * https://leetcode.com/problems/kth-largest-element-in-an-array/
  */
-int findKthLargest(std::vector<int>& nums, int k) {
+int findKthLargest2(std::vector<int>& nums, int k) {
 
   if (nums.empty()) return 0;
   std::make_heap(nums.begin(), nums.end());
@@ -65,17 +106,4 @@ int findKthLargest(std::vector<int>& nums, int k) {
   }
 
   return sorter.top().first;
-}
-
-/*
- * O(n*log(n)) "for fun" solution
- * speed: 8 ms, faster than 97.59%
- * memory: 9.2 MB, less than 86.36%
- *
- * https://leetcode.com/problems/kth-largest-element-in-an-array/
- */
-int findKthLargest2(std::vector<int>& nums, int k) {
-
-  sort(nums.begin(), nums.end(), std::greater<>());
-  return nums[k - 1];
 }
