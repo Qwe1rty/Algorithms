@@ -107,3 +107,104 @@ int findKthLargest2(std::vector<int>& nums, int k) {
 
   return sorter.top().first;
 }
+
+
+/*
+ * 218. The Skyline Problem
+ * Hard
+ *
+ * speed:  92 ms, faster than 8.85%
+ * memory: 53.5 MB, less than 7.69%
+ *
+ * https://leetcode.com/problems/the-skyline-problem/
+ */
+/*
+ * Test cases:
+ *
+ * [[0,2,3],[2,5,3]]
+ * [[2,4,7],[2,4,5],[2,4,6]]
+ * [[1,2,1],[1,2,2],[1,2,3]]
+ * [[2,9,10],[3,7,15],[5,12,12],[15,20,10],[19,24,8]]
+ * [[0,5,7],[5,10,7],[5,10,12],[10,15,7],[15,20,7],[15,20,12],[20,25,7]]
+ */
+std::vector<std::vector<int>>
+partitionSkyline(
+  const std::vector<std::vector<int>>& buildings,
+  int l,
+  int r) {
+
+  if (r - l <= 1) return std::vector<std::vector<int>>{
+    {buildings[l][0], buildings[l][2]},
+    {buildings[l][1], 0}
+  };
+
+  int m = (l + r) / 2;
+  std::vector<std::vector<int>> lpartition(partitionSkyline(buildings, l, m));
+  std::vector<std::vector<int>> rpartition(partitionSkyline(buildings, m, r));
+
+  int li = 0;
+  int ri = 0;
+  int lheight = 0;
+  int rheight = 0;
+  std::vector<std::vector<int>> merged;
+
+  while (true) {
+
+    if (li >= lpartition.size()) {
+      merged.insert(
+        merged.end(), rpartition.begin() + ri, rpartition.end()
+      );
+      break;
+    }
+    else if (ri >= rpartition.size()) {
+      merged.insert(
+        merged.end(), lpartition.begin() + li, lpartition.end()
+      );
+      break;
+    }
+
+    if (lpartition[li][0] == rpartition[ri][0]) {
+      int max = std::max(lpartition[li][1], rpartition[ri][1]);
+      if (max != std::max(lheight, rheight)) {
+        merged.emplace_back(std::vector<int>{lpartition[li][0], max});
+      }
+      lheight = lpartition[li][1];
+      ++li;
+      rheight = rpartition[ri][1];
+      ++ri;
+    }
+    else if (lpartition[li][0] < rpartition[ri][0]) {
+      if (lpartition[li][1] > std::max(lheight, rheight)) {
+        merged.emplace_back(lpartition[li]);
+      }
+      else if (lheight > rheight && lheight > lpartition[li][1]) {
+        merged.emplace_back(std::vector<int>{
+          lpartition[li][0], std::max(rheight, lpartition[li][1])
+        });
+      }
+      lheight = lpartition[li][1];
+      ++li;
+    }
+    else {
+      if (rpartition[ri][1] > std::max(lheight, rheight)) {
+        merged.emplace_back(rpartition[ri]);
+      }
+      else if (rheight > lheight && rheight > rpartition[ri][1]) {
+        merged.emplace_back(std::vector<int>{
+          rpartition[ri][0], std::max(lheight, rpartition[ri][1])
+        });
+      }
+      rheight = rpartition[ri][1];
+      ++ri;
+    }
+  }
+
+  return merged;
+}
+
+std::vector<std::vector<int>>
+getSkyline(const std::vector<std::vector<int>>& buildings) {
+
+  if (buildings.empty()) return std::vector<std::vector<int>>{};
+  return partitionSkyline(buildings, 0, buildings.size());
+}

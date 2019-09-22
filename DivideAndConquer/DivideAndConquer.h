@@ -18,4 +18,9 @@ int findKthLargest(std::vector<int>& nums, int k);
 ListNode* mergeKLists(std::vector<ListNode*>& lists);
 ListNode* mergeKLists2(std::vector<ListNode*>& lists);
 
+// 218. The Skyline Problem
+std::vector<std::vector<int>>
+getSkyline(const std::vector<std::vector<int>>& buildings);
+
+
 #endif //CLION_DIVIDEANDCONQUER_H
