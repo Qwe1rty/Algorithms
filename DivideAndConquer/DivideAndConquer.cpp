@@ -128,19 +128,9 @@ int findKthLargest2(std::vector<int>& nums, int k) {
  * [[0,5,7],[5,10,7],[5,10,12],[10,15,7],[15,20,7],[15,20,12],[20,25,7]]
  */
 std::vector<std::vector<int>>
-partitionSkyline(
-  const std::vector<std::vector<int>>& buildings,
-  int l,
-  int r) {
-
-  if (r - l <= 1) return std::vector<std::vector<int>>{
-    {buildings[l][0], buildings[l][2]},
-    {buildings[l][1], 0}
-  };
-
-  int m = (l + r) / 2;
-  std::vector<std::vector<int>> lpartition(partitionSkyline(buildings, l, m));
-  std::vector<std::vector<int>> rpartition(partitionSkyline(buildings, m, r));
+mergeSkyline(
+  std::vector<std::vector<int>>&& lpartition,
+  std::vector<std::vector<int>>&& rpartition) {
 
   int li = 0;
   int ri = 0;
@@ -203,8 +193,27 @@ partitionSkyline(
 }
 
 std::vector<std::vector<int>>
+partitionSkyline(
+  const std::vector<std::vector<int>>& buildings,
+  int l,
+  int r) {
+
+  if (r - l <= 1) return std::vector<std::vector<int>>{
+      {buildings[l][0], buildings[l][2]},
+      {buildings[l][1], 0}
+    };
+
+  int m = (l + r) / 2;
+  return mergeSkyline(
+    partitionSkyline(buildings, l, m),
+    partitionSkyline(buildings, m, r)
+  );
+}
+
+std::vector<std::vector<int>>
 getSkyline(const std::vector<std::vector<int>>& buildings) {
 
   if (buildings.empty()) return std::vector<std::vector<int>>{};
   return partitionSkyline(buildings, 0, buildings.size());
 }
+};
