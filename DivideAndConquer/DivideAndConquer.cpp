@@ -113,8 +113,9 @@ int findKthLargest2(std::vector<int>& nums, int k) {
  * 218. The Skyline Problem
  * Hard
  *
- * speed:  76 ms, faster than 11.73%
- * memory: 49.9 MB, less than 7.69%
+ * O(n*log(n)) divide and conquer solution
+ * speed: 76 ms, faster than 11.73%
+ * memory: 49 MB, less than 7.69%
  *
  * https://leetcode.com/problems/the-skyline-problem/
  */
@@ -134,8 +135,11 @@ mergeSkyline(
 
   int li = 0;
   int ri = 0;
+
+  int loc = 0;
   int lheight = 0;
   int rheight = 0;
+  int cheight = 0;
 
   std::vector<std::vector<int>> merged;
   merged.reserve(lpartition.size() + rpartition.size());
@@ -154,30 +158,27 @@ mergeSkyline(
     }
 
     if (lpartition[li][0] == rpartition[ri][0]) {
-      int max = std::max(lpartition[li][1], rpartition[ri][1]);
-      if (max != std::max(lheight, rheight)) {
-        merged.emplace_back(std::vector<int>{lpartition[li][0], max});
-      }
+      loc = lpartition[li][0];
       lheight = lpartition[li][1];
       rheight = rpartition[ri][1];
       ++li;
       ++ri;
     }
     else if (lpartition[li][0] < rpartition[ri][0]) {
-      int max = std::max(lpartition[li][1], rheight);
-      if (max != std::max(lheight, rheight)) {
-        merged.emplace_back(std::vector<int>{lpartition[li][0], max});
-      }
+      loc = lpartition[li][0];
       lheight = lpartition[li][1];
       ++li;
     }
     else {
-      int max = std::max(lheight, rpartition[ri][1]);
-      if (max != std::max(lheight, rheight)) {
-        merged.emplace_back(std::vector<int>{rpartition[ri][0], max});
-      }
+      loc = rpartition[ri][0];
       rheight = rpartition[ri][1];
       ++ri;
+    }
+
+    int max = std::max(lheight, rheight);
+    if (max != cheight) {
+      merged.emplace_back(std::vector<int>{loc, max});
+      cheight = max;
     }
   }
 
