@@ -55,6 +55,7 @@ ON
 
  speed: 262 ms, faster than 44.55%
  memory: 0B, less than 100.00% of MySQL
+
  https://leetcode.com/problems/customers-who-never-order/
  */
 SELECT
@@ -80,4 +81,24 @@ WHERE
             Orders.CustomerId
         FROM
             Orders
+);
+
+
+/*
+ 196. Delete Duplicate Emails
+ Easy
+
+ speed: 648 ms, faster than 87.19%
+ memory: 0B, less than 100.00% of MySQL
+
+ https://leetcode.com/problems/delete-duplicate-emails/
+ */
+DELETE FROM Person
+WHERE Id NOT IN (
+    SELECT *
+    FROM (
+             SELECT MIN(Id)
+             FROM Person
+             GROUP BY Email
+         ) AS T
 );
