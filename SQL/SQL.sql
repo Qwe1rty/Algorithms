@@ -3,7 +3,6 @@
  Easy
 
  speed: 221 ms, faster than 61.93%
- memory: 0B, less than 100.00%
 
  https://leetcode.com/problems/combine-two-tables/
  */
@@ -23,7 +22,6 @@ ON
  Easy
 
  speed: 306 ms, faster than 76.31%
- memory: 0B, less than 100.00% of MySQL
 
  https://leetcode.com/problems/employees-earning-more-than-their-managers/
  */
@@ -54,7 +52,6 @@ ON
  Easy
 
  speed: 262 ms, faster than 44.55%
- memory: 0B, less than 100.00% of MySQL
 
  https://leetcode.com/problems/customers-who-never-order/
  */
@@ -89,7 +86,6 @@ WHERE
  Easy
 
  speed: 648 ms, faster than 87.19%
- memory: 0B, less than 100.00% of MySQL
 
  https://leetcode.com/problems/delete-duplicate-emails/
  */
@@ -102,3 +98,21 @@ WHERE Id NOT IN (
              GROUP BY Email
          ) AS T
 );
+
+
+/*
+ 176. Second Highest Salary
+ Easy
+
+ speed:139 ms, faster than 63.19%
+
+ https://leetcode.com/problems/second-highest-salary/
+ */
+SELECT IFNULL((
+        SELECT DISTINCT Salary
+        FROM Employee
+        ORDER BY Salary DESC
+        LIMIT 1 OFFSET 1
+    ),
+    NULL)
+AS SecondHighestSalary
