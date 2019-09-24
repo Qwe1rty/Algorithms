@@ -274,15 +274,13 @@ kClosest(std::vector<std::vector<int>>& points, int K) {
     }
     std::swap(distances[li - 1], distances[l]);
 
-    if (li == K) {
-      break;
-    }
-    else if (li >= K) {
+    if (li > K) {
       r = li - 1;
     }
-    else {
+    else if (li < K) {
       l = li;
     }
+    else break;
   }
 
   std::vector<std::vector<int>> result;
