@@ -115,4 +115,27 @@ SELECT IFNULL((
         LIMIT 1 OFFSET 1
     ),
     NULL)
-AS SecondHighestSalary
+AS SecondHighestSalary;
+
+
+/*
+ 177. Nth Highest Salary
+ Medium
+
+ 216 ms, faster than 30.94%
+
+ https://leetcode.com/problems/nth-highest-salary/
+ */
+CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT
+BEGIN
+    DECLARE NN INT;
+    SET NN = N - 1;
+    RETURN (
+        SELECT IFNULL((
+            SELECT DISTINCT Salary
+            FROM Employee
+            ORDER BY Salary DESC
+            LIMIT 1 OFFSET NN
+        ), NULL) AS SecondHighestSalary
+    );
+END
