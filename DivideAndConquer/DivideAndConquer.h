@@ -8,7 +8,13 @@ class ListNode;
 /*
  * Medium
  */
+
+// 215. Kth Largest Element in an Array
 int findKthLargest(std::vector<int>& nums, int k);
+
+// 973. K Closest Points to Origin
+std::vector<std::vector<int>>
+kClosest(std::vector<std::vector<int>>& points, int K);
 
 /*
  * Hard
