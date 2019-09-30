@@ -16,6 +16,9 @@ int findKthLargest(std::vector<int>& nums, int k);
 std::vector<std::vector<int>>
 kClosest(std::vector<std::vector<int>>& points, int K);
 
+// 74. Search a 2D Matrix
+bool searchMatrix(const std::vector<std::vector<int>>& matrix, int target);
+
 /*
  * Hard
  */
