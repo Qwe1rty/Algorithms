@@ -20,7 +20,7 @@ kClosest(std::vector<std::vector<int>>& points, int K);
 bool searchMatrix(const std::vector<std::vector<int>>& matrix, int target);
 
 // 240. Search a 2D Matrix II
-bool searchMatrix2(const std::vector<std::vector<int>>& matrix, int target);
+bool searchMatrixII(const std::vector<std::vector<int>>& matrix, int target);
 
 /*
  * Hard
