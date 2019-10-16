@@ -9,7 +9,7 @@
  */
 
 // 121. Best Time to Buy and Sell Stock
-int maxProfit(const std::vector<int>& prices)
+int maxProfit(const std::vector<int>& prices);
 
 /*
  * Medium
