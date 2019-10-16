@@ -6,6 +6,13 @@
 class ListNode;
 
 /*
+ * Easy
+ */
+
+// 88. Merge Sorted Array
+void merge(std::vector<int>& nums1, int m, const std::vector<int>& nums2, int n);
+
+/*
  * Medium
  */
 
