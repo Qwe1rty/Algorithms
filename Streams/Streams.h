@@ -22,6 +22,9 @@ int maxSubArray(const std::vector<int>& nums);
 // 19. Remove Nth Node From End of List
 ListNode* removeNthFromEnd(ListNode* head, int n);
 
+// 621. Task Scheduler (incorrect solution)
+int leastInterval(const std::vector<char>& tasks, int n);
+
 /*
  * Hard
  */
