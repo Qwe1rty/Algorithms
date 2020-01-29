@@ -21,5 +21,8 @@ std::vector<std::vector<int>> fourSum2(std::vector<int>& nums, int target);
 // 42. Trapping Rain Water
 int trap(const std::vector<int>& height);
 
+// 128. Longest Consecutive Sequence
+int longestConsecutive(const std::vector<int>& nums);
+
 
 #endif //CLION_TWOPOINTERS_H
