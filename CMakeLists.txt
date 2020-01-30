@@ -31,6 +31,7 @@ set(SOURCE_FILES
         TreesAndGraphs/TreeNode.h
         TreesAndGraphs/Solutions/BinaryTreeInorderTraversal.cpp
         TreesAndGraphs/Solutions/NumberOfIslands.cpp
+        TreesAndGraphs/Solutions/VerifyPreorderSerializationOfBinaryTree.cpp
         LinkedLists/LinkedLists.h
         LinkedLists/ListNode.h
         LinkedLists/Solutions/MergeTwoSortedLists.cpp
