@@ -1,6 +1,7 @@
 #include <vector>
 
-#include "../../Streams/LinkedLists.h"
+#include "../../LinkedLists/ListNode.h"
+#include "../../LinkedLists/Structures/LinkedLists.h"
 
 
 /*

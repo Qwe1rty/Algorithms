@@ -1,7 +1,7 @@
 #include <stack>
 #include <vector>
 
-#include "../TreeNode.h"
+#include "../Structures/TreeNode.h"
 
 
 /*

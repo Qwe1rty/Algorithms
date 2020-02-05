@@ -37,6 +37,7 @@ int leastInterval(const std::vector<char>& tasks, int n) {
       letter = src.letter;
       remaining = src.remaining;
       timestamp = src.timestamp;
+      return *this;
     }
     bool operator< (const Node& src) const {
       // reversed so heap acts as min heap instead of max heap
