@@ -18,6 +18,7 @@ int numIslands(std::vector<std::vector<char>>& grid);
 
 // 331. Verify Preorder Serialization of a Binary Tree
 bool isValidSerialization(const std::string& preorder);
+bool isValidSerialization2(const std::string& preorder);
 
 
 #endif //CLION_TREES_H
