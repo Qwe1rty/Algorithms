@@ -19,7 +19,7 @@ ListNode* mergeTwoLists(ListNode* l1, ListNode* l2);
 // 19. Remove Nth Node From End of List
 ListNode* removeNthFromEnd(ListNode* head, int n);
 
-// 621. Task Scheduler (incorrect solution)
+// 621. Task Scheduler
 int leastInterval(const std::vector<char>& tasks, int n);
 
 
