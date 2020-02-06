@@ -10,7 +10,9 @@
  * Medium
  * 621. Task Scheduler
  *
- * incorrect solution
+ * O(n*log(n)) greedy heap solution
+ * speed: 104 ms, faster than 40.29%
+ * memory: 20.6 MB, less than 6.38%
  *
  * https://leetcode.com/problems/task-scheduler/
  */
@@ -38,44 +40,29 @@ struct Cycle {
   {}
 };
 
-struct Node{
+struct Task{
   const Cycle& cycle;
 
   char letter;
   int remaining;
   int timestamp;
 
-  Node(const Cycle& cycle, char letter, int remaining) :
+  Task(const Cycle& cycle, char letter, int remaining) :
     cycle{cycle},
     letter{letter},
     remaining{remaining},
     timestamp{INT_MIN}
   {}
 
-  Node& operator= (const Node& src) {
+  Task& operator= (const Task& src) {
     letter = src.letter;
     remaining = src.remaining;
     timestamp = src.timestamp;
     return *this;
   }
-  bool operator< (const Node& src) const {
-    const bool self_ready =
-      cycle.iteration >= (cycle.interval + timestamp);
-    const bool src_ready =
-      cycle.iteration >= (cycle.interval + src.timestamp);
 
-    if (self_ready && src_ready) {
-      return remaining < src.remaining;
-    }
-    else if (self_ready) {
-      return false;
-    }
-    else if (src_ready) {
-      return true;
-    }
-    else return timestamp == src.timestamp ?
-        remaining < src.remaining :
-        timestamp > src.timestamp;
+  bool operator< (const Task& src) const {
+    return remaining < src.remaining;
   }
 };
 
@@ -87,27 +74,39 @@ int leastInterval(const std::vector<char>& tasks, const int n) {
   }
 
   Cycle cycle{n};
+  std::queue<Task> timeout{};
+  std::priority_queue<Task> queue{};
 
-  std::priority_queue<Node> queue{};
   for (const auto& count : counter) {
-    queue.emplace(Node{
+    queue.emplace(Task{
       cycle,
       count.first,
       count.second
     });
   }
 
-  for (; !queue.empty(); ++cycle.iteration) {
-    Node task(queue.top());
+  for (; !queue.empty() || !timeout.empty(); ++cycle.iteration) {
 
-    if (cycle.iteration > (cycle.interval + task.timestamp)) {
+    if (!timeout.empty()) {
+      int next_run = timeout.front().timestamp + cycle.interval;
+
+      // fast-forward optimization
+      if (queue.empty()) cycle.iteration = next_run + 1;
+
+      if (cycle.iteration > next_run) {
+        queue.push(timeout.front());
+        timeout.pop();
+      }
+    }
+
+    if (!queue.empty()) {
+      Task task(queue.top());
       queue.pop();
+
       task.timestamp = cycle.iteration;
       --task.remaining;
 
-      if (task.remaining > 0) {
-        queue.emplace(task);
-      }
+      if (task.remaining > 0) timeout.push(task);
     }
   }
 
