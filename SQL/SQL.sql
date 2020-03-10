@@ -51,7 +51,11 @@ ON
  183. Customers Who Never Order
  Easy
 
+ Solution 1:
  speed: 262 ms, faster than 44.55%
+
+ Solution 2:
+ speed: 254 ms, faster than 55.57%
 
  https://leetcode.com/problems/customers-who-never-order/
  */
@@ -65,9 +69,6 @@ ON
 WHERE
     Orders.CustomerId IS NULL;
 
-/*
- speed: 254 ms, faster than 55.57%
- */
 SELECT
     Customers.Name AS 'Customers'
 FROM
@@ -104,7 +105,7 @@ WHERE Id NOT IN (
  176. Second Highest Salary
  Easy
 
- speed:139 ms, faster than 63.19%
+ speed: 139 ms, faster than 63.19%
 
  https://leetcode.com/problems/second-highest-salary/
  */
@@ -122,7 +123,7 @@ AS SecondHighestSalary;
  177. Nth Highest Salary
  Medium
 
- 216 ms, faster than 30.94%
+ speed: 216 ms, faster than 30.94%
 
  https://leetcode.com/problems/nth-highest-salary/
  */
@@ -138,4 +139,31 @@ BEGIN
             LIMIT 1 OFFSET NN
         ), NULL) AS SecondHighestSalary
     );
-END
+END;
+
+
+/*
+ 197. Rising Temperature
+ Easy
+
+ Solution 1:
+ speed: 1635 ms, faster than 5.0%
+
+ Solution 2:
+ speed: 713 ms, faster than 36.49%
+
+ https://leetcode.com/problems/rising-temperature/
+ */
+
+SELECT Id FROM Weather AS CurrWeather
+WHERE CurrWeather.Temperature > (
+    SELECT PrevWeather.Temperature
+    FROM Weather AS PrevWeather
+    WHERE PrevWeather.RecordDate = SUBDATE(CurrWeather.RecordDate, 1)
+);
+
+SELECT CurrWeather.Id
+FROM
+    Weather AS CurrWeather INNER JOIN Weather AS PrevWeather
+    ON PrevWeather.RecordDate = SUBDATE(CurrWeather.RecordDate, 1)
+WHERE CurrWeather.Temperature > PrevWeather.Temperature;
