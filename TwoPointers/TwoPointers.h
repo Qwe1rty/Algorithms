@@ -4,6 +4,13 @@
 #include <vector>
 
 /*
+ * Easy
+ */
+
+std::vector<int> intersect(std::vector<int>& nums1, std::vector<int>& nums2);
+std::vector<int> intersect2(std::vector<int>& nums1, std::vector<int>& nums2);
+
+/*
  * Medium
  */
 

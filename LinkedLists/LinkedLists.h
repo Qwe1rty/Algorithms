@@ -22,5 +22,4 @@ ListNode* removeNthFromEnd(ListNode* head, int n);
 // 621. Task Scheduler
 int leastInterval(const std::vector<char>& tasks, int n);
 
-
 #endif //CLION_LINKEDLISTS_H
