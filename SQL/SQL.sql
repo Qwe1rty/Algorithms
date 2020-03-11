@@ -223,3 +223,19 @@ WHERE (Employee.DepartmentId, Employee.Salary) IN (
     FROM Employee AS GroupedEmployees
     GROUP BY GroupedEmployees.DepartmentId
 );
+
+/*
+ Example of subquery table join using the tables
+ from Department Highest Salary, and the default test case
+ */
+
+SELECT *
+FROM Department JOIN ((
+    SELECT *
+    FROM Employee
+    WHERE
+        Employee.Name = "Joe" AND
+        Employee.Salary = 70000
+    )
+    AS Person)
+    ON Department.Id = Person.DepartmentId;
