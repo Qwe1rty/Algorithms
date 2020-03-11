@@ -167,3 +167,44 @@ FROM
     Weather AS CurrWeather INNER JOIN Weather AS PrevWeather
     ON PrevWeather.RecordDate = SUBDATE(CurrWeather.RecordDate, 1)
 WHERE CurrWeather.Temperature > PrevWeather.Temperature;
+
+
+/*
+ 182. Duplicate Emails
+ Easy
+
+ speed: 183 ms, faster than 95.62%
+
+ https://leetcode.com/problems/duplicate-emails/
+ */
+
+SELECT Email
+FROM Person
+GROUP BY Email
+HAVING COUNT(Email) > 1;
+
+
+/*
+ 184. Department Highest Salary
+ Medium
+
+ 318 ms, faster than 84.29%
+
+ https://leetcode.com/problems/department-highest-salary/
+ */
+
+SELECT
+    Department.Name AS Department,
+    Employee.Name AS Employee,
+    Employee.Salary
+FROM ((
+    SELECT DepartmentId, MAX(Salary) AS MaxSalary
+    FROM Employee
+    GROUP BY DepartmentId
+) AS MaxSalaries
+INNER JOIN Employee ON
+    MaxSalaries.MaxSalary = Employee.Salary AND
+    MaxSalaries.DepartmentId = Employee.DepartmentId
+)
+INNER JOIN Department ON
+Employee.DepartmentId = Department.Id
