@@ -188,7 +188,11 @@ HAVING COUNT(Email) > 1;
  184. Department Highest Salary
  Medium
 
+ Solution 1: 3-way join
  318 ms, faster than 84.29%
+
+ Solution 2: Join on department table with where condition
+ 413 ms, faster than 68.37%
 
  https://leetcode.com/problems/department-highest-salary/
  */
@@ -207,4 +211,15 @@ INNER JOIN Employee ON
     MaxSalaries.DepartmentId = Employee.DepartmentId
 )
 INNER JOIN Department ON
-Employee.DepartmentId = Department.Id
+    Employee.DepartmentId = Department.Id;
+
+SELECT
+    Department.Name AS Department,
+    Employee.Name AS Employee,
+    Employee.Salary
+FROM Employee INNER JOIN Department ON Employee.DepartmentId = Department.Id
+WHERE (Employee.DepartmentId, Employee.Salary) IN (
+    SELECT GroupedEmployees.DepartmentId, MAX(Salary)
+    FROM Employee AS GroupedEmployees
+    GROUP BY GroupedEmployees.DepartmentId
+);
