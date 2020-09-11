@@ -15,6 +15,7 @@ std::vector<int> inorderTraversal(TreeNode* root);
 
 // 200. Number of Islands
 int numIslands(std::vector<std::vector<char>>& grid);
+int numIslands2(const std::vector<std::vector<char>>& grid);
 
 // 331. Verify Preorder Serialization of a Binary Tree
 bool isValidSerialization(const std::string& preorder);
