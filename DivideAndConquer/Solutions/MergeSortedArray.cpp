@@ -5,8 +5,8 @@
  * 88. Merge Sorted Array
  * Easy
  *
- * speed: 0ms, faster than 100%
- * memory: 8.6MB, less than 100%
+ * Runtime: 0ms, faster than 100%
+ * Memory Usage: 8.6MB, less than 100%
  *
  * https://leetcode.com/problems/merge-sorted-array/
  */

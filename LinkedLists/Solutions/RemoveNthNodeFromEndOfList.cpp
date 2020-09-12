@@ -6,8 +6,8 @@
  * Medium
  *
  * Single pass two-pointer solution
- * speed: 4ms, faster than 85.71%
- * memory: 8.4MB, less than 100%
+ * Runtime: 4ms, faster than 85.71%
+ * Memory Usage: 8.4MB, less than 100%
  *
  * https://leetcode.com/problems/remove-nth-node-from-end-of-list
  */

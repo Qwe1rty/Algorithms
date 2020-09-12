@@ -7,8 +7,8 @@
  * 456. 132 Pattern
  *
  * O(n) stack + min array solution
- * speed: 24 ms, faster than 83.92%
- * memory: 10.9 MB, less than 25.00%
+ * Runtime: 24 ms, faster than 83.92%
+ * Memory Usage: 10.9 MB, less than 25.00%
  *
  * https://leetcode.com/problems/132-pattern/
  */

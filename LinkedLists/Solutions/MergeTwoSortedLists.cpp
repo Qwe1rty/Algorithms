@@ -5,8 +5,8 @@
  * 21. Merge Two Sorted Lists
  * Easy
  *
- * speed: 4ms, faster than 98.39%
- * memory: 8.8MB, less than 97.54%
+ * Runtime: 4ms, faster than 98.39%
+ * Memory Usage: 8.8MB, less than 97.54%
  *
  * https://leetcode.com/problems/merge-two-sorted-lists
  */

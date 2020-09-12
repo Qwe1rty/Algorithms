@@ -7,8 +7,8 @@
  * Hard
  *
  * O(n) range merging via hash map
- * speed: 12ms, faster than 69.90%
- * memory: 10.1MB, less than 67.31%
+ * Runtime: 12ms, faster than 69.90%
+ * Memory Usage: 10.1MB, less than 67.31%
  *
  * https://leetcode.com/problems/longest-consecutive-sequence
  */

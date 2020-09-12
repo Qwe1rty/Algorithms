@@ -11,8 +11,8 @@
  * 621. Task Scheduler
  *
  * O(n*log(n)) greedy heap solution
- * speed: 104 ms, faster than 40.29%
- * memory: 20.6 MB, less than 6.38%
+ * Runtime: 104 ms, faster than 40.29%
+ * Memory Usage: 20.6 MB, less than 6.38%
  *
  * https://leetcode.com/problems/task-scheduler/
  */

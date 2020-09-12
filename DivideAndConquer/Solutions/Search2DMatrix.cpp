@@ -5,8 +5,8 @@
  * 74. Search a 2D Matrix
  * Medium
  *
- * speed: 8 ms, faster than 93.59%
- * memory: 9.6 MB, less than 100.00%
+ * Runtime: 8 ms, faster than 93.59%
+ * Memory Usage: 9.6 MB, less than 100.00%
  *
  * https://leetcode.com/problems/search-a-2d-matrix/
  */

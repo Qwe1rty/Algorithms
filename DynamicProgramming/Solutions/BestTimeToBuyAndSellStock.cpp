@@ -5,8 +5,8 @@
  * Easy
  * 121. Best Time to Buy and Sell Stock
  *
- * speed: 8 ms, faster than 65.82%
- * memory: 9.7 MB, less than 40.37%
+ * Runtime: 8 ms, faster than 65.82%
+ * Memory Usage: 9.7 MB, less than 40.37%
  *
  * https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
  */

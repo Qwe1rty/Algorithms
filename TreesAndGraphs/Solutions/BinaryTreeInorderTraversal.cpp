@@ -9,8 +9,8 @@
  * Medium
  *
  * Iterative solution
- * speed: 0ms, faster than 100%
- * memory: 8.9MB, less than 97.24%
+ * Runtime: 0ms, faster than 100%
+ * Memory Usage: 8.9MB, less than 97.24%
  *
  * https://leetcode.com/problems/binary-tree-inorder-traversal/
  */

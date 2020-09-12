@@ -7,8 +7,8 @@
  * Medium
  *
  * O(n + k*log(k)) heapify + BFS solution
- * speed: 16 ms, faster than 45.40%
- * memory: 9.4 MB, less than 60.61%
+ * Runtime: 16 ms, faster than 45.40%
+ * Memory Usage: 9.4 MB, less than 60.61%
  *
  * https://leetcode.com/problems/kth-largest-element-in-an-array/
  */

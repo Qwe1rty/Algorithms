@@ -5,8 +5,8 @@
  * 3. Longest Substring Without Repeating Characters
  * Medium
  *
- * speed: 20ms, faster than 74.33%
- * memory: 10.8MB, less than 69.10%
+ * Runtime: 20ms, faster than 74.33%
+ * Memory Usage: 10.8MB, less than 69.10%
  *
  * https://leetcode.com/problems/longest-substring-without-repeating-characters
  */

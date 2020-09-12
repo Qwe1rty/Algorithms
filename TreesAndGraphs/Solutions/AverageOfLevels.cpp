@@ -7,8 +7,8 @@
  * 637. Average of Levels in Binary Tree
  * Easy
  *
- * speed: 36 ms, faster than 19.12%
- * memory: 24.7 MB, less than 5.01%
+ * Runtime: 36 ms, faster than 19.12%
+ * Memory Usage: 24.7 MB, less than 5.01%
  *
  * https://leetcode.com/problems/average-of-levels-in-binary-tree
  */

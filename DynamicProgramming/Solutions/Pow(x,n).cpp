@@ -5,8 +5,8 @@
  * 50. Pow(x, n)
  * Medium
  *
- * speed: 4ms, faster than 100%
- * memory: 8.6MB, less than 99.73%
+ * Runtime: 4ms, faster than 100%
+ * Memory Usage: 8.6MB, less than 99.73%
  *
  * https://leetcode.com/problems/powx-n/
  */

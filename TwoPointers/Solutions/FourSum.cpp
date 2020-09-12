@@ -7,8 +7,8 @@
  * Medium
  *
  * pruning solution
- * speed: 12ms, faster than 99.89%
- * memory: 9.2MB, less than 100%
+ * Runtime: 12ms, faster than 99.89%
+ * Memory Usage: 9.2MB, less than 100%
  *
  * https://leetcode.com/problems/4sum/
  */

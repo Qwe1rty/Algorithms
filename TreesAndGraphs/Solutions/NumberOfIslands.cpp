@@ -6,8 +6,8 @@
  * Medium
  *
  * O(w * h) DFS traversal
- * speed: 20 ms, faster than 27.27%
- * memory: 10.6 MB, less than 100.00%
+ * Runtime: 20 ms, faster than 27.27%
+ * Memory Usage: 10.6 MB, less than 100.00%
  *
  * https://leetcode.com/problems/number-of-islands/submissions/
  */

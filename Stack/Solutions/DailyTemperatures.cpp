@@ -6,8 +6,8 @@
  * Medium
  * 739. Daily Temperatures
  *
- * speed: 192 ms, faster than 79.72%
- * memory: 14.8 MB, less than 96.00%
+ * Runtime: 192 ms, faster than 79.72%
+ * Memory Usage: 14.8 MB, less than 96.00%
  *
  * https://leetcode.com/problems/daily-temperatures/
  */

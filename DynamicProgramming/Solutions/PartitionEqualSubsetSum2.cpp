@@ -6,8 +6,8 @@
  * Medium
  *
  * Bottom-up (tabulation) DP solution
- * speed: 168ms, faster than 37.96%
- * memory: 8.5MB, less than 100%
+ * Runtime: 168ms, faster than 37.96%
+ * Memory Usage: 8.5MB, less than 100%
  *
  * https://leetcode.com/problems/partition-equal-subset-sum/
  */

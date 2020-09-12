@@ -6,8 +6,8 @@
  * Hard
  *
  * O(n*log(n)) divide and conquer solution
- * speed: 76 ms, faster than 11.73%
- * memory: 49 MB, less than 7.69%
+ * Runtime: 76 ms, faster than 11.73%
+ * Memory Usage: 49 MB, less than 7.69%
  *
  * https://leetcode.com/problems/the-skyline-problem/
  */

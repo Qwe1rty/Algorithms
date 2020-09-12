@@ -5,8 +5,8 @@
  * 242. Valid Anagram
  * Easy
  *
- * speed: 20ms, faster than 45.33%
- * memory: 9.2MB, less than 36.61%
+ * Runtime: 20ms, faster than 45.33%
+ * Memory Usage: 9.2MB, less than 36.61%
  *
  * https://leetcode.com/problems/valid-anagram/
  */

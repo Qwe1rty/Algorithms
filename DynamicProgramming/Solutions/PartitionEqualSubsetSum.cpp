@@ -7,8 +7,8 @@
  * Medium
  *
  * Top-down (memoization) DP solution
- * speed: 8ms, faster than 92.42%
- * memory: 9.9MB, less than 39.38%
+ * Runtime: 8ms, faster than 92.42%
+ * Memory Usage: 9.9MB, less than 39.38%
  *
  * https://leetcode.com/problems/partition-equal-subset-sum/
  */

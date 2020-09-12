@@ -6,8 +6,8 @@
  * Medium
  *
  * O(n) quick select solution
- * speed: 200 ms, faster than 97.28%
- * memory: 38.9 MB, less than 78.13%
+ * Runtime: 200 ms, faster than 97.28%
+ * Memory Usage: 38.9 MB, less than 78.13%
  *
  * https://leetcode.com/problems/k-closest-points-to-origin/
  */

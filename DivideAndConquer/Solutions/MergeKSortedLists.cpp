@@ -9,8 +9,8 @@
  * Hard
  *
  * O(n*log(k)) top-down divide and conquer solution
- * speed: 20ms, faster than 98.80%
- * memory: 11.1MB, less than 72.62%
+ * Runtime: 20ms, faster than 98.80%
+ * Memory Usage: 11.1MB, less than 72.62%
  *
  * https://leetcode.com/problems/merge-k-sorted-lists/
  */

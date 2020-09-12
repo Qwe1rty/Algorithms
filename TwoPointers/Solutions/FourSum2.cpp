@@ -9,8 +9,8 @@
  * Medium
  *
  * 2Sum + 2Sum = 4Sum strategy solution
- * speed: 348ms, faster than 6.58%
- * memory: 86.7MB, less than 5.21%
+ * Runtime: 348ms, faster than 6.58%
+ * Memory Usage: 86.7MB, less than 5.21%
  *
  * https://leetcode.com/problems/4sum/
  */

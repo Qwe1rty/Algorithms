@@ -5,8 +5,8 @@
  * 5. Longest Palindromic Substring
  * Medium
  *
- * speed: 20ms, faster than 76.32%
- * memory: 8.6MB, less than 100%
+ * Runtime: 20ms, faster than 76.32%
+ * Memory Usage: 8.6MB, less than 100%
  *
  * https://leetcode.com/problems/longest-palindromic-substring/
  */

@@ -7,8 +7,8 @@
  * Easy
  *
  * Hashmap O(m + n) solution
- * speed: 4 ms, faster than 99.21%
- * memory: 8.7 MB, less than 100.00%
+ * Runtime: 4 ms, faster than 99.21%
+ * Memory Usage: 8.7 MB, less than 100.00%
  *
  * https://leetcode.com/problems/intersection-of-two-arrays-ii/
  */

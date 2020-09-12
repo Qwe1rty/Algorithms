@@ -7,8 +7,8 @@
  * Hard
  *
  * Diagonal slicing DP strategy
- * speed: 40ms, faster than 84.56%
- * memory: 18.9MB, less than 44.74%
+ * Runtime: 40ms, faster than 84.56%
+ * Memory Usage: 18.9MB, less than 44.74%
  *
  * https://leetcode.com/problems/cherry-pickup/
  */

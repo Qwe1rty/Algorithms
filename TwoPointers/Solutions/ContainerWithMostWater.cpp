@@ -5,8 +5,8 @@
  * 11. Container With Most Water
  * Medium
  *
- * speed: 20ms, faster than 98.41%
- * memory: 9.7MB, less than 99.72%
+ * Runtime: 20ms, faster than 98.41%
+ * Memory Usage: 9.7MB, less than 99.72%
  *
  * https://leetcode.com/problems/container-with-most-water/
  */

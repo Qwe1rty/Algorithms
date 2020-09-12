@@ -7,8 +7,8 @@
  * Medium
  *
  * O(n) traversal, O(n) memory stack-based solution
- * speed: 4 ms, faster than 91.25%
- * memory: 9 MB, less than 75.00%
+ * Runtime: 4 ms, faster than 91.25%
+ * Memory Usage: 9 MB, less than 75.00%
  *
  * https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree
  */

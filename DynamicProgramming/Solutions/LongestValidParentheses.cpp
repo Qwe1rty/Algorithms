@@ -7,8 +7,8 @@
  * Hard
  *
  * O(n) bottom-up solution
- * speed: 4ms, faster than 96.01%
- * memory: 9.4MB, less than 85.71%
+ * Runtime: 4ms, faster than 96.01%
+ * Memory Usage: 9.4MB, less than 85.71%
  *
  * https://leetcode.com/problems/longest-valid-parentheses
  */

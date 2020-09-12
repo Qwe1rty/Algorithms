@@ -6,8 +6,8 @@
  * Easy
  *
  * O(n) startup, O(1) prefix sum array solution
- * speed: 60 ms, faster than 21.13%
- * memory: 17.2 MB, less than 93.10%
+ * Runtime: 60 ms, faster than 21.13%
+ * Memory Usage: 17.2 MB, less than 93.10%
  *
  * https://leetcode.com/problems/range-sum-query-immutable/submissions/
  */

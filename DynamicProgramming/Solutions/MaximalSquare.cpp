@@ -6,8 +6,8 @@
  * 221. Maximal Square
  * Medium
  *
- * speed: 20ms, faster than 98.02%
- * memory: 10.4MB, less than 100%
+ * Runtime: 20ms, faster than 98.02%
+ * Memory Usage: 10.4MB, less than 100%
  *
  * https://leetcode.com/problems/maximal-square/
  */

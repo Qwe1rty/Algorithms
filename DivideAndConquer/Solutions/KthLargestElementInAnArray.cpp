@@ -6,8 +6,8 @@
  * Medium
  *
  * O(n) divide and conquer solution
- * speed: 8ms, faster than 97.54%
- * memory: 9.2 MB, less than 93.94%
+ * Runtime: 8ms, faster than 97.54%
+ * Memory Usage: 9.2 MB, less than 93.94%
  *
  * https://leetcode.com/problems/kth-largest-element-in-an-array/
  */

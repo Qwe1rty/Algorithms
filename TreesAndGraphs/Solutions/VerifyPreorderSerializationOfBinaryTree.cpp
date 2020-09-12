@@ -6,8 +6,8 @@
  * Medium
  *
  * O(n) traversal, O(1) auxiliary memory
- * speed: 0 ms, faster than 100.00%
- * memory: 8.9 MB, less than 100.00%
+ * Runtime: 0 ms, faster than 100.00%
+ * Memory Usage: 8.9 MB, less than 100.00%
  *
  * https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree
  */

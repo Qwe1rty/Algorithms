@@ -6,8 +6,8 @@
  * Medium
  *
  * precalculated ranges, O(log(n)) queries
- * speed: 44 ms, faster than 49.80%
- * memory: 33.7 MB, less than 8.33%
+ * Runtime: 44 ms, faster than 49.80%
+ * Memory Usage: 33.7 MB, less than 8.33%
  *
  * https://leetcode.com/problems/range-sum-query-mutable/
  */

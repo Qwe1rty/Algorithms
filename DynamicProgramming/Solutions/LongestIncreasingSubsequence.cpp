@@ -6,8 +6,8 @@
  * Medium
  *
  * Bottom-up O(n^2) DP solution
- * speed: 40ms, faster than 53.38%
- * memory: 8.8MB, less than 49.74%
+ * Runtime: 40ms, faster than 53.38%
+ * Memory Usage: 8.8MB, less than 49.74%
  *
  * https://leetcode.com/problems/longest-increasing-subsequence/
  */

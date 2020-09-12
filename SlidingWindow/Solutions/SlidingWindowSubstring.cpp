@@ -5,8 +5,8 @@
  * 76. Minimum Window Substring
  * Hard
  *
- * speed: 52 ms, faster than 51.46%
- * memory: 7.8 MB, less than 67.97%
+ * Runtime: 52 ms, faster than 51.46%
+ * Memory Usage: 7.8 MB, less than 67.97%
  *
  * https://leetcode.com/problems/minimum-window-substring/
  */

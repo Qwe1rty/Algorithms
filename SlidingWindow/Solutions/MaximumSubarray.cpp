@@ -7,8 +7,8 @@
  * Easy
  *
  * O(n) solution
- * speed: 4 ms, faster than 98.61%
- * memory: 9.2 MB, less than 93.14%
+ * Runtime: 4 ms, faster than 98.61%
+ * Memory Usage: 9.2 MB, less than 93.14%
  *
  * https://leetcode.com/problems/maximum-subarray/
  */

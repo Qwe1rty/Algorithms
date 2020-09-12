@@ -6,8 +6,8 @@
  * 239. Sliding Window Maximum
  * Hard
  *
- * speed: 56ms, faster than 83.42%
- * memory: 12.8MB, less than 98.36%
+ * Runtime: 56ms, faster than 83.42%
+ * Memory Usage: 12.8MB, less than 98.36%
  *
  * https://leetcode.com/problems/sliding-window-maximum/
  */

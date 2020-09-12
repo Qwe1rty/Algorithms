@@ -6,8 +6,8 @@
  * 543. Diameter of Binary Tree
  * Easy
  *
- * speed: 16 ms, faster than 69.10%
- * memory: 20.7 MB, less than 89.44%
+ * Runtime: 16 ms, faster than 69.10%
+ * Memory Usage: 20.7 MB, less than 89.44%
  *
  * https://leetcode.com/problems/diameter-of-binary-tree/
  */

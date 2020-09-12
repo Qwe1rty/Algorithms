@@ -5,8 +5,8 @@
  * 64. Minimum Path Sum
  * Medium
  *
- * speed: 12ms, faster than 98.07%
- * memory: 10.6MB, less than 99.37%
+ * Runtime: 12ms, faster than 98.07%
+ * Memory Usage: 10.6MB, less than 99.37%
  *
  * https://leetcode.com/problems/minimum-path-sum/
  */

@@ -8,8 +8,8 @@
  * binary search windowing solution
  * O(min(n, m)) worst case
  * O(log(n*m)) average case but really high constant
- * speed: 112 ms, faster than 26.71%
- * memory: 12.8 MB, less than 93.33%
+ * Runtime: 112 ms, faster than 26.71%
+ * Memory Usage: 12.8 MB, less than 93.33%
  *
  * https://leetcode.com/problems/search-a-2d-matrix-ii/
  */

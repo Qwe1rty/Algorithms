@@ -5,8 +5,8 @@
  * 62. Unique Paths
  * Medium
  *
- * speed: 4ms, faster than 100%
- * memory: 8.7MB, less than 25.41
+ * Runtime: 4ms, faster than 100%
+ * Memory Usage: 8.7MB, less than 25.41
  *
  * https://leetcode.com/problems/unique-paths/
  */

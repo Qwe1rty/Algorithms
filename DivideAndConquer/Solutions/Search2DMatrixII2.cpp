@@ -6,8 +6,8 @@
  * Medium
  *
  * O(n + m) walking solution
- * speed: 72 ms, faster than 54.23%
- * memory: 12.8MB, less than 93.33%
+ * Runtime: 72 ms, faster than 54.23%
+ * Memory Usage: 12.8MB, less than 93.33%
  *
  * https://leetcode.com/problems/search-a-2d-matrix-ii/
  */

@@ -6,8 +6,8 @@
  * Hard
  *
  * Two pointers solution
- * speed: 8ms, faster than 98.98%
- * memory: 9.1MB, less that 99.63%
+ * Runtime: 8ms, faster than 98.98%
+ * Memory Usage: 9.1MB, less that 99.63%
  *
  * https://leetcode.com/problems/trapping-rain-water/
  */
