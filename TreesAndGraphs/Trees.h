@@ -3,6 +3,14 @@
 
 #include <string>
 #include <vector>
+#include "Structures/TreeNode.h"
+
+/*
+ * Easy
+ */
+
+// 543. Diameter of Binary Tree
+int diameterOfBinaryTree(const TreeNode* root);
 
 /*
  * Medium
