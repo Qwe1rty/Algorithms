@@ -4,6 +4,7 @@
 #include <string>
 #include <vector>
 #include "Structures/TreeNode.h"
+#include "Structures/Node.h"
 
 /*
  * Easy
@@ -34,6 +35,10 @@ bool isValidSerialization2(const std::string& preorder);
 
 // 102. Binary Tree Level Order Traversal
 std::vector<std::vector<int>> levelOrder(const TreeNode* root);
+
+// 116. Populating Next Right Pointers in Each Node
+Node* connect(Node* root);
+Node* connect2(Node* root);
 
 
 #endif //CLION_TREES_H
