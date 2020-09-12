@@ -12,6 +12,9 @@
 // 543. Diameter of Binary Tree
 int diameterOfBinaryTree(const TreeNode* root);
 
+// 637. Average of Levels in Binary Tree
+std::vector<double> averageOfLevels(const TreeNode* const root)
+
 /*
  * Medium
  */
